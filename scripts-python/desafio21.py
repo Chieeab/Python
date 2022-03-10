@@ -1,6 +1,8 @@
-import pygame
-pygame.init()
-pygame.mixer.init()
-pygame.mixer.music.load('Electric_Angel.mp3')
-pygame.mixer.music.play()
-pygame.event.wait()
+from pygame import *
+init()
+mixer.music.load("e:\Musica\Musicas\DROELOE - Open Blinds.mp3")
+mixer.music.play()
+
+
+while mixer.music.get_busy():
+    time.Clock().tick(10)
